@@ -140,9 +140,18 @@
                 changeElement.textContent = `${change > 0 ? '↗' : '↘'} ${change.toFixed(2)}% (24h)`;
                 changeElement.className = `change ${change > 0 ? 'positive' : 'negative'}`;
                 
-                const utcTime = new Date().toUTCString();
-                document.getElementById('updated').textContent = 
-                    `Actualizado: ${utcTime}`;
+                const ahora = new Date();
+                const fechaEspañol = ahora.toLocaleString('es-ES', { 
+                    timeZone: 'UTC',
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                });
+document.getElementById('updated').textContent = `Actualizado: ${fechaEspañol} UTC`;
             } catch (error) {
                 document.getElementById('price').textContent = 'Error cargando precio';
                 console.error('Error:', error);
@@ -174,6 +183,7 @@
 </body>
 
 </html>
+
 
 
 
