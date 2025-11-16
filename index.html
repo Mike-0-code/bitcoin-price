@@ -28,46 +28,81 @@
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23f7931a'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white'>₿</text></svg>">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f7931a, #8b4513);
-            color: white;
-            text-align: center;
-            padding: 50px;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-        .price {
-            font-size: 4em;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        .updated {
-            font-size: 1em;
-            opacity: 0.8;
-            margin-top: 20px;
-        }
-        .change {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        .positive { color: #4CAF50; }
-        .negative { color: #f44336; }
-    </style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f7931a, #8b4513);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        max-width: 600px;
+        width: 90%;
+    }
+    
+    /* ✅ PRECIO - MÁS GRANDE Y DOMINANTE */
+    .price {
+        font-size: 5em; /* Aumentado de 4em */
+        font-weight: bold;
+        margin: 10px 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    /* ✅ VARIACIÓN - MÁS DESTACADA */
+    .change {
+        font-size: 2em; /* Aumentado de 1.5em */
+        margin: 5px 0;
+        font-weight: bold;
+    }
+    
+    /* ✅ TÍTULO - MÁS DISCRETO */
+    h1 {
+        font-size: 1.8em; /* Reducido de 2.5em */
+        margin-bottom: 5px;
+        opacity: 0.9;
+    }
+    
+    .subtitle {
+        font-size: 1em; /* Reducido de 1.2em */
+        opacity: 0.8;
+        margin-bottom: 20px;
+    }
+    
+    /* ✅ ACTUALIZACIÓN - MÁS PEQUEÑO */
+    .updated {
+        font-size: 0.9em; /* Reducido de 1em */
+        opacity: 0.7;
+        margin-top: 15px;
+    }
+    
+    /* Colores para variación */
+    .positive { color: #4CAF50; }
+    .negative { color: #f44336; }
+    
+    /* Responsive para móviles */
+    @media (max-width: 768px) {
+        .price { font-size: 3.5em; }
+        .change { font-size: 1.5em; }
+        h1 { font-size: 1.5em; }
+        .container { padding: 20px; }
+    }
+    
+    @media (max-width: 480px) {
+        .price { font-size: 2.8em; }
+        .change { font-size: 1.2em; }
+        h1 { font-size: 1.3em; }
+    }
+</style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0VD8KJRWRR"></script>
 <script>
@@ -139,6 +174,7 @@
 </body>
 
 </html>
+
 
 
 
