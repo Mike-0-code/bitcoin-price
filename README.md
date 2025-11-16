@@ -13,7 +13,7 @@ Una página web minimalista que muestra el precio del Bitcoin en tiempo real con
 
 ## 🌐 Demo en Vivo
 
-[Ver sitio web en vivo](https://mike-0-code.github.io/bitcoin-price/)
+[Visitar sitio web](https://mike-0-code.github.io/bitcoin-price/)
 
 *🔒 Incluye política de privacidad y cumplimiento GDPR*
 
@@ -53,7 +53,7 @@ Este proyecto es de código abierto y está disponible bajo la [MIT License](LIC
 
 ## 👨‍💻 Autor
 
-Creado por Mike-0-code (https://github.com/Mike-0-code)
+Creado por [Mike-0-code](https://github.com/Mike-0-code)
 
 ---
 
