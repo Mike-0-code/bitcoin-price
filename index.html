@@ -151,7 +151,9 @@
                     minute: '2-digit',
                     second: '2-digit'
                 });
-document.getElementById('updated').textContent = `Actualizado: ${fechaEspañol} UTC`;
+                const fechaCapitalizada = fechaEspañol.replace(/\b\w/g, l => l.toUpperCase());
+                document.getElementById('updated').textContent = `Actualizado: ${fechaCapitalizada} UTC`;
+                
             } catch (error) {
                 document.getElementById('price').textContent = 'Error cargando precio';
                 console.error('Error:', error);
@@ -183,6 +185,7 @@ document.getElementById('updated').textContent = `Actualizado: ${fechaEspañol} 
 </body>
 
 </html>
+
 
 
 
