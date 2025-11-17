@@ -178,8 +178,8 @@
 <body>
     <!-- NUEVA BARRA SUPERIOR -->
     <div class="header-bar">
-        <h1>Precio Bitcoin en Tiempo Real</h1>
-        <div class="header-subtitle">Seguimiento en vivo de BTC/USD</div>
+        <h1>Precio Bitcoin</h1>
+        <div class="header-subtitle">Actualizado cada minuto • BTC/USD</div>
     </div>
     
     <!-- CONTENIDO PRINCIPAL -->
@@ -249,7 +249,7 @@
 
         // Actualizar inmediatamente y cada 30 segundos
         updateBitcoinPrice();
-        setInterval(updateBitcoinPrice, 30000);
+        setInterval(updateBitcoinPrice, 60000);
     </script>
     <!-- Aviso de Cookies -->
 <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 15px; text-align: center; z-index: 1000;">
@@ -271,6 +271,7 @@
 </script>
 </body>
 </html>
+
 
 
 
