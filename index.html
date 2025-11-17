@@ -124,7 +124,7 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        z-index: 10;
+        z-index: 1001;
     }
 
     .footer-bar .updated {
@@ -133,8 +133,12 @@
         color: #cccccc;
         font-weight: 500;
         margin: 0;
-    }
-        
+    }   
+    
+    #cookie-notice {
+    bottom: 50px !important;
+    }  
+    
     .positive { 
         color: #00d664;
     }
@@ -153,7 +157,11 @@
         .change { font-size: 1.6em; }
         .header-bar h1 { font-size: 1.3em; }
         .footer-bar {
-        padding: 10px 15px; /* ← NUEVO */
+        padding: 10px 15px;
+        }
+        #cookie-notice {
+        bottom: 45px !important;
+        padding: 12px 15px !important;
         }
     }
     
@@ -175,6 +183,13 @@
         .header-subtitle { font-size: 0.8em; }
         .footer-bar { padding: 8px 12px; }
         .footer-bar .updated { font-size: 0.75em; }
+        #cookie-notice {
+        bottom: 40px !important;
+        padding: 10px 12px !important;
+        }
+        #cookie-notice span {
+        font-size: 0.9em !important;
+        }
     }
 
     @supports (-webkit-touch-callout: none) {
@@ -279,6 +294,7 @@
 </script>
 </body>
 </html>
+
 
 
 
