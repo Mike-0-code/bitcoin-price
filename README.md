@@ -2,7 +2,7 @@
 
 Una página web minimalista que muestra el precio del Bitcoin en tiempo real con actualizaciones automáticas cada 30 segundos.
 
-## 🚀 Características
+## Características
 
 - **Precio en tiempo real** del Bitcoin (BTC/USD)
 - **Actualizaciones automáticas** cada 30 segundos  
@@ -11,13 +11,13 @@ Una página web minimalista que muestra el precio del Bitcoin en tiempo real con
 - **Interfaz minimalista** y fácil de usar
 - **Precisión completa** con centavos incluidos
 
-## 🌐 Demo en Vivo
+## Demo en Vivo
 
 [Visitar sitio web](https://mike-0-code.github.io/precio-bitcoin/)
 
-*🔒 Incluye política de privacidad y cumplimiento GDPR*
+*Incluye política de privacidad y cumplimiento GDPR*
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Hosting:** GitHub Pages
@@ -25,15 +25,15 @@ Una página web minimalista que muestra el precio del Bitcoin en tiempo real con
 - **Analytics:** Google Analytics
 - **SEO:** Meta tags optimizados
 
-## 📊 Especificaciones Técnicas
+## Especificaciones Técnicas
 
-- ⏱️ **Actualización:** Cada 30 segundos
-- 💰 **Precisión:** Hasta 8 decimales  
-- 🌍 **Zona horaria:** UTC (universal)
-- 📱 **Compatibilidad:** Todos los navegadores modernos
-- ⚡ **Rendimiento:** Tiempo de carga < 2 segundos
+- **Actualización:** Cada 30 segundos
+- **Precisión:** Hasta 8 decimales  
+- **Zona horaria:** UTC (universal)
+- **Compatibilidad:** Todos los navegadores modernos
+- **Rendimiento:** Tiempo de carga < 2 segundos
 
-## 🎯 Propósito
+## Propósito
 
 Este proyecto demuestra cómo crear un indicador financiero en tiempo real usando tecnologías web modernas, con especial enfoque en:
 - Simplicidad y usabilidad
@@ -41,13 +41,13 @@ Este proyecto demuestra cómo crear un indicador financiero en tiempo real usand
 - Experiencia de usuario limpia
 - Cumplimiento de estándares web
 
-## 🔧 Desarrollo
+## Desarrollo
 
 Para ejecutar localmente:
 1. Clona el repositorio: `git clone https://github.com/Mike-0-code/precio-bitcoin.git`
 2. Abre `index.html` en tu navegador
 
-## 👨‍💻 Autor
+## Autor
 
 Creado por [Mike-0-code](https://github.com/Mike-0-code)
 
