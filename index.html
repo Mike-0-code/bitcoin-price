@@ -80,6 +80,7 @@
         align-items: center;
         padding: 20px;
         width: 100%;
+        padding-bottom: 60px;
     }
     
     .container {
@@ -114,7 +115,26 @@
         color: #cccccc;
         font-weight: 500;
     }
-    
+    .footer-bar {
+        background: #0a0a0a;
+        padding: 12px 20px;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid #222222;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .footer-bar .updated {
+        font-size: 0.85em;
+        opacity: 0.9;
+        color: #cccccc;
+        font-weight: 500;
+        margin: 0;
+    }
+        
     .positive { 
         color: #00d664;
     }
@@ -124,15 +144,24 @@
     }
     
     @media (max-width: 768px) {
-        .main-content { padding: 15px; }
+        .main-content { 
+            padding: 15px;
+            padding-bottom: 50px;
+        }
         .container { padding: 40px 30px; width: 92%; }
         .price { font-size: 3.8em; }
         .change { font-size: 1.6em; }
         .header-bar h1 { font-size: 1.3em; }
+        .footer-bar {
+        padding: 10px 15px; /* ← NUEVO */
+        }
     }
     
     @media (max-width: 480px) {
-        .main-content { padding: 10px; }
+        .main-content { 
+            padding: 10px;
+            padding-bottom: 45px;
+        }
         .container { 
             padding: 35px 25px; 
             width: 95%; 
@@ -144,7 +173,8 @@
         .header-bar { padding: 12px 15px; }
         .header-bar h1 { font-size: 1.2em; }
         .header-subtitle { font-size: 0.8em; }
-        .updated { margin-top: 30px; }
+        .footer-bar { padding: 8px 12px; }
+        .footer-bar .updated { font-size: 0.75em; }
     }
 
     @supports (-webkit-touch-callout: none) {
@@ -171,13 +201,11 @@
         <div class="container">
             <div class="price" id="price">Cargando...</div>
             <div class="change" id="change"></div>
-            <div class="updated" id="updated"></div>
         </div>
     </div>      
-    <!-- ZONA INFERIOR -->
-    <div class="footer">
+   <!-- NUEVO FOOTER FIJO -->
+    <div class="footer-bar">
         <div class="updated" id="updated"></div>
-        </div>
     </div>
     <script>
         async function updateBitcoinPrice() {
@@ -251,5 +279,6 @@
 </script>
 </body>
 </html>
+
 
 
