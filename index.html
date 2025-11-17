@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- === META TAGS SEO === -->
-    <title>Precio Bitcoin en Tiempo Real | BTC USD Actualizado Cada 30 Segundos</title>
-    <meta name="description" content="Consulta el precio actual del Bitcoin en dólares (BTC/USD). Valor en tiempo real con gráfico, cambio porcentual en 24h y actualizaciones automáticas cada 30 segundos.">
-    <meta name="keywords" content="bitcoin precio, btc usd, valor bitcoin, precio bitcoin hoy, criptomoneda, bitcoin en tiempo real, cotización bitcoin">
+    <title>Precio Bitcoin en Tiempo Real | BTC USD Actualizado Cada Minuto</title>
+    <meta name="description" content="Consulta el precio actual del Bitcoin en dólares (BTC/USD). Valor en tiempo real con cambio porcentual en 24h y actualizaciones automáticas cada minuto.">
+    <meta name="keywords" content="bitcoin precio, btc usd, valor bitcoin, precio bitcoin hoy, criptomoneda, bitcoin tiempo real, cotización bitcoin">
     <meta name="author" content="TuNombre">
     <meta name="robots" content="index, follow">
-    
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content="Precio Bitcoin en Tiempo Real | BTC USD Actualizado">
-    <meta property="og:description" content="Sigue el precio del Bitcoin en vivo. Actualizaciones automáticas cada 30 segundos con valor actual, cambio en 24h y gráfico histórico.">
+    <meta property="og:description" content="Sigue el precio del Bitcoin. Actualizaciones automáticas cada minuto con valor actual y cambio en 24h.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1200&h=630&fit=crop">
-    <meta property="og:url" content="https://tu-usuario.github.io/bitcoin-price">
+    <meta property="og:url" content="https://TU-USUARIO.github.io/precio-bitcoin">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Bitcoin Price Tracker">
-    
+    <meta property="og:site_name" content="Precio Bitcoin en Tiempo Real">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Precio Bitcoin en Tiempo Real">
-    <meta name="twitter:description" content="Precio actual del Bitcoin (BTC/USD) con actualizaciones en vivo cada 30 segundos">
+    <meta name="twitter:description" content="Precio actual del Bitcoin (BTC/USD) con actualizaciones cada minuto">
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=1200&h=630&fit=crop">
-    
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23f7931a'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white'>₿</text></svg>">
 <style>
@@ -33,13 +29,11 @@
         padding: 0;
         box-sizing: border-box;
     }
-    
     html, body {
         width: 100%;
         height: 100%;
         overflow: hidden;
     }
-    
     body {
         font-family: Arial, sans-serif;
         background: linear-gradient(135deg, #f7931a, #8b4513);
@@ -47,13 +41,11 @@
         padding: 0;
         margin: 0;
         display: flex;
-        flex-direction: column; /* ← Permite header fijo arriba */
+        flex-direction: column;
         min-height: 100vh;
         min-height: -webkit-fill-available;
         width: 100%;
     }
-    
-    /* NUEVA BARRA SUPERIOR */
     .header-bar {
         background: rgba(0, 0, 0, 0.8);
         padding: 15px 20px;
@@ -63,20 +55,16 @@
         position: relative;
         z-index: 10;
     }
-    
     .header-bar h1 {
         font-size: 1.4em;
         margin: 0;
         font-weight: 600;
     }
-    
     .header-subtitle {
         font-size: 0.9em;
         opacity: 0.8;
         margin-top: 5px;
     }
-    
-    /* CONTENIDO PRINCIPAL (ocupa el espacio restante) */
     .main-content {
         flex: 1;
         display: flex;
@@ -86,7 +74,6 @@
         padding: 20px;
         width: 100%;
     }
-    
     .container {
         background: rgba(0, 0, 0, 0.7);
         padding: 50px 40px;
@@ -96,7 +83,6 @@
         width: 90%;
         text-align: center;
     }
-    
     .price {
         font-size: 4.5em;
         font-weight: bold;
@@ -171,7 +157,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-0VD8KJRWRR');
 </script>
 </head>
@@ -181,7 +166,6 @@
         <h1>Precio Bitcoin</h1>
         <div class="header-subtitle">Actualizado cada minuto • BTC/USD</div>
     </div>
-    
     <!-- CONTENIDO PRINCIPAL -->
     <div class="main-content">
         <div class="container">
@@ -189,11 +173,10 @@
             <div class="change" id="change"></div>
             <div class="updated" id="updated"></div>
         </div>
-    </div>
-        
-        <!-- ZONA INFERIOR -->
-        <div class="footer">
-            <div class="updated" id="updated"></div>
+    </div>      
+    <!-- ZONA INFERIOR -->
+    <div class="footer">
+        <div class="updated" id="updated"></div>
         </div>
     </div>
     <script>
@@ -246,24 +229,21 @@
                 setTimeout(updateBitcoinPrice, 10000);
             }
         }
-
         // Actualizar inmediatamente y cada 30 segundos
         updateBitcoinPrice();
         setInterval(updateBitcoinPrice, 60000);
     </script>
     <!-- Aviso de Cookies -->
-<div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 15px; text-align: center; z-index: 1000;">
+    <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 15px; text-align: center; z-index: 1000;">
     <span>Usamos Google Analytics para entender el uso del sitio. Al continuar navegando, aceptas este seguimiento.</span>
     <button onclick="acceptCookies()" style="margin-left: 15px; padding: 5px 15px; background: #f7931a; color: white; border: none; border-radius: 3px; cursor: pointer;">Aceptar</button>
     <a href="privacidad.html" style="margin-left: 15px; color: #f7931a;">Más información</a>
-</div>
-
+    </div>
 <script>
     // Mostrar aviso si no ha sido aceptado
     if (!localStorage.getItem('cookies-accepted')) {
         document.getElementById('cookie-notice').style.display = 'block';
     }
-
     function acceptCookies() {
         localStorage.setItem('cookies-accepted', 'true');
         document.getElementById('cookie-notice').style.display = 'none';
@@ -271,10 +251,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
