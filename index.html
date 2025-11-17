@@ -191,9 +191,14 @@
                 document.getElementById('updated').textContent = `Actualizado: ${fechaCapitalizada} UTC`;
                 
             } catch (error) {
-                document.getElementById('price').textContent = 'Error cargando precio';
-                console.error('Error:', error);
-            }
+    console.error('Error:', error);
+    document.getElementById('price').textContent = 'Actualizando...';
+    document.getElementById('change').textContent = '⏳ Conexión con API';
+    document.getElementById('change').className = 'change';
+    
+    // Reintentar en 10 segundos en lugar de 30
+    setTimeout(updateBitcoinPrice, 10000);
+}
         }
 
         // Actualizar inmediatamente y cada 30 segundos
@@ -221,5 +226,6 @@
 </body>
 
 </html>
+
 
 
