@@ -1,4 +1,4 @@
-# Rastreador del Precio de Bitcoin
+# Precio Bitcoin en Tiempo Real
 
 Una página web minimalista que muestra el precio del Bitcoin en tiempo real con actualizaciones automáticas cada 30 segundos.
 
