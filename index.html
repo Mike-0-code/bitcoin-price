@@ -136,8 +136,27 @@
     }   
     
     #cookie-notice {
-    bottom: 50px !important;
+        bottom: 50px !important;
     }  
+
+    .data-source {
+        font-size: 0.7em;
+        opacity: 0.6;
+        margin-top: 8px;
+        color: #888888;
+        line-height: 1.2;
+    }
+
+    .data-source a {
+        color: #f7931a;
+        text-decoration: none;
+        transition: opacity 0.2s;
+    }
+
+    .data-source a:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+    }
     
     .positive { 
         color: #00d664;
@@ -206,7 +225,7 @@
 </script>
 </head>
 <body>
-    <!-- NUEVA BARRA SUPERIOR -->
+    <!-- BARRA SUPERIOR -->
     <div class="header-bar">
         <h1>Precio Bitcoin en Tiempo Real</h1>
         <div class="header-subtitle">Actualizado cada minuto • BTC/USD</div>
@@ -218,9 +237,10 @@
             <div class="change" id="change"></div>
         </div>
     </div>      
-   <!-- NUEVO FOOTER FIJO -->
+   <!-- FOOTER FIJO -->
     <div class="footer-bar">
         <div class="updated" id="updated"></div>
+        <div class="data-source">Datos por: <a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">CoinGecko</a></div>
     </div>
     <script>
         async function updateBitcoinPrice() {
@@ -272,7 +292,7 @@
                 setTimeout(updateBitcoinPrice, 10000);
             }
         }
-        // Actualizar inmediatamente y cada 30 segundos
+        // Actualizar inmediatamente y cada minuto
         updateBitcoinPrice();
         setInterval(updateBitcoinPrice, 60000);
     </script>
@@ -294,6 +314,7 @@
 </script>
 </body>
 </html>
+
 
 
 
